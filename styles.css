@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'NorseBold';
+    src: url(assets/norse-font/Norsebold.otf);
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    
+}
+
+#left_column {
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/background-image.jpg);
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#right_column {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo_text {
+    font-family: 'NorseBold', sans-serif;
+    font-size: 100px;
+    color: white;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.6);
+    margin-top: 20vh;
+    padding: 0 150px 0 150px
+}
+
+#logo_img {
+    height: 150px;
+    width: auto;
+}
+
+#image_creds {
+    color: white;
+    font-family: 'Inter';
+}
+
+a {
+    color: white;
+}
+
