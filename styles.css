@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'NorseBold';
     src: url(assets/norse-font/Norsebold.otf);
@@ -26,8 +30,6 @@ body {
 #right_column {
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 #logo_text {
@@ -113,7 +115,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding-bottom: 16px;
+    padding-bottom: 24px;
 }
 
 .form_row {
@@ -124,5 +126,74 @@ a {
 .form_element {
     display: flex;
     flex-direction: column;
+}
+
+#form_footer {
+    padding-left: 40px;
+    padding-top: 24px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+input[type="text"] {
+    border-color: #E5E7EB;
+    border-style: solid;
+    width: 250px;
+    height: 35px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    border-color: blue;
+    outline: none;
+}
+
+input[type="email"] {
+    border-color: #E5E7EB;
+    border-style: solid;
+    width: 250px;
+    height: 35px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+input[type="tel"] {
+    border-color: #E5E7EB;
+    border-style: solid;
+    width: 250px;
+    height: 35px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+input[type="password"] {
+    border-color: #E5E7EB;
+    border-style: solid;
+    width: 250px;
+    height: 35px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+input:user-invalid {
+    border-color: red;
+    border-style: solid;
+    width: 250px;
+    height: 35px;
+    border-radius: 3px;
+    padding: 5px;
 }
 
